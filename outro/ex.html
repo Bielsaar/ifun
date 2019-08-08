@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/register.css" />
-    <link rel="shortcut icon" href="../images/favicon.ico" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity=
-		"sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <title>Registre</title>
-</head>
-<body>
-    <!-- Header -->
-	<header id="header">
-		<a class="logo" href="../index.html"><img src="../images/Lofo.png" alt="Ifun"></a>
-			<nav>
-			<!-- TODO Barra de menu -->
-				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="personagem.html">Personagens</a></li>
-					<li><a href="contato.html">Contato</a></li>
-					<li><a href="mapa.html">Mapa</a></li>
-				</ul>
-			</nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/register.css" />
+        <link rel="shortcut icon" href="../images/favicon.ico" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity=
+            "sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <title>Registre</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header">
+            <a class="logo" href="../index.html"><img src="../images/Lofo.png" alt="Ifun"></a>
+                <nav>
+                <!-- Barra de menu -->
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="personagem.html">Personagens</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="mapa.html">Mapa</a></li>
+                    </ul>
+                </nav>
+        </header>
         <section class="Form">
             <form action="#" method="post">
                 <fieldset>
-                        <div class="campo">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" style="width: 10em" value="">
-                        </div>
-                        <div class="campo">
-                            <label for="snome">Sobrenome</label>
-                            <input type="text" id="snome" name="snome" style="width: 10em" value="">
-                        </div>
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div class="campo">
+                        <label for="snome">Sobrenome</label>
+                        <input type="text" id="snome" name="snome">
+                    </div>
                     <div class="campo">
                         <label>Sexo</label>
+                        <!--Esses Labels a seguir são para a estilização-->
                         <label>
                             <input type="radio" name="sexo" value="masculino"> Masculino
                         </label>
@@ -44,43 +45,45 @@
                             <input type="radio" name="sexo" value="feminino"> Feminino
                         </label>
                     </div>
-                        <div class="campo">
-                            <label for="senha">Senha</label>
-                            <input type="text" id="nome" name="nome" style="width: 10em" value="">
-                        </div>
-                        <div class="campo">
-                            <label for="snome">Digite novamente</label>
-                            <input type="text" id="snome" name="snome" style="width: 10em" value="">
-                        </div>
+                    <div class="campo">
+                        <label for="senha">Senha</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div class="campo">
+                        <label for="snome">Digite a senha novamente</label>
+                        <input type="text" id="snome" name="snome">
+                    </div>
                     <div class="campo">
                         <label for="email">E-mail</label>
-                        <input type="text" id="email" name="email" style="width: 20em" value="">
+                        <input type="text" id="email" name="email">
                     </div>
-                        <div class="campo">
-                            <label for="cidade">Cidade</label>
-                            <input type="text" id="cidade" name="cidade" style="width: 10em" value="">
-                        </div>
-                        <div class="campo">
-                            <label for="estado">Estado</label>
-                            <select name="estado" id="estado">
-                                <option value="">--</option>
-                                <option value="PR">PB</option>
-                            </select>
-                        </div>
+                    <div class="campo">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade">
+                    </div>
+                    <div class="campo">
+                        <label for="estado">Estado</label>
+                        <select name="estado" id="estado">
+                            <option value="">--</option>
+                            <option value="PR">PB</option>
+                            <option value="AC">AC</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <!--Esses Labels a seguir são para a estilização-->
                     <div class="campo">
                         <label>
-                            <input type="checkbox" name="" value="1"> Gostaria de receber notificações do IFun
+                            <input type="checkbox" name="" value="1"> Gostaria de receber notificações do IFun.
                         </label>
                     </div>
                     <div class="campo">
                         <label>
-                            <input type="checkbox" name="" value="1"> Eu concordo com os Termos e Condições
+                            <input type="checkbox" name="" value="1" > Eu concordo com os Termos e Condições.
                         </label>
                     </div>
                 </fieldset>
             <button type="submit" name="submit"><a href="../index.html">Criar</a></button>
-        </form>
-    </section>
-
+            </form>
+        </section>
     </body>
 </html>
