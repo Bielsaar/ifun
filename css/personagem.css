@@ -1,0 +1,340 @@
+/***********************/
+/* Body  */
+/***********************/
+body {
+    border: 0;
+    background-image:  url("../images/sky.png");
+    background-position: 0 -100px;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    vertical-align: baseline;
+    color: #444444;
+    font-size: 1rem;
+    line-height: 1.65;
+    font-weight: 400;
+}
+/* Body */
+
+/***********************/
+/* Header */
+/***********************/
+#header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #111111;
+  color: rgba(255, 255, 255, 0.993);
+  height: 7.5rem;
+  left: 0;
+  line-height: 3.25rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10001;
+}
+@media screen and (min-width:768px){
+  #header {
+    height: 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width:1024px){
+  #header {
+    justify-content: space-around;
+  }
+}
+#header nav ul li {
+  display: inline-block;
+}
+#header ul li:hover{
+  cursor: pointer;
+}
+ul {
+  list-style: disc;
+  margin: 0 0 2rem 0;
+  padding-left: 1rem;
+}
+
+#header .logo {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0 1.25rem;
+  text-decoration: none;
+  height: 80px;
+  align-items: flex-start;
+}
+#header nav {
+  height: 3.25em;
+  line-height: 3.25rem;
+  padding: 0 1.25rem;
+}
+
+/* Header */
+
+/**********/
+/* Footer */
+/**********/
+#footer {
+  background-color: #111111;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 8rem 0 6rem 0 ;
+}
+.inner{
+  margin: 0 auto;
+  width: 75rem;
+  max-width: calc(100% - 6rem);
+}
+#footer ul.alt li, #footer ul.plain li {
+  border-top-color: rgba(255, 255, 255, 0.25);
+}  
+#footer strong, #footer b {
+  color: #ffffff;
+}
+#footer ul.alt li {
+  border-top-color: rgba(255, 255, 255, 0.25);
+}
+#footer .content {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
+}
+#footer .content section {
+  width: 100%;
+}
+@media screen and (min-width:768px){
+  #footer .content section {
+    width: 50%;
+  }
+}
+#footer .content section:first-child {
+  flex: 1 100%;
+}
+@media screen and (min-width:1024px){
+  #footer .content section:first-child {
+    flex: 1 50%;
+    
+  }
+  #footer .content section {
+    width: 25%;
+  }
+}
+#footer .copyright {
+  border-top: 1px solid;
+  font-size: 0.8rem;
+  opacity: 0.5;
+  padding: 2rem 0;
+  text-align: center;
+}
+#twitter a:hover{
+  color:#00aced;
+}
+#faceb a:hover{
+  color:#3b5998;
+}
+#insta a:hover{
+  color:#DD2A7B;
+}
+#git a:hover{
+  color:#333;
+}
+ul.plain {
+  list-style: none;
+  padding-left: 0;
+}
+ul.alt {
+  list-style: none;
+  padding-left: 0;
+}
+ul.alt li, ul.plain li {
+  border-top: solid 1px;
+  padding: 0.75rem 0;
+  border-top-color: rgba(0, 0, 0, 0.25);
+}
+ul.alt li:first-child, ul.plain li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+ul.alt li:last-child, ul.plain li:last-child {
+  padding-bottom: 0;
+}
+/*Footer*/
+
+/**************************************/
+/*Parte chata dos personagens animados*/
+/**************************************/
+main{
+  padding: 100px 15%;
+  color: #333;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  text-align: center;
+  
+}
+@media screen and (min-width:768px){
+  main{
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+a{
+  text-decoration: none;
+  color:rgb(139, 139, 139);
+}
+li{
+  list-style-type: none;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(240, 248, 255, 0.6);
+  border: 1px solid rgb(245, 245, 245, 0.7); 
+}
+main img{
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+  width: 100%;
+  height: auto;
+}
+main img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 3px #000);
+  filter: grayscale(0%);
+  max-width: 100%;
+}
+.minhaimagem:hover{
+  background-image: url('../images/pixel1.png');
+  transition: transform 4s;
+  background-size: cover;
+}
+.minhaimagem2:hover{
+  background-image: url('../images/pixel2.png');
+  transition: transform 4s;
+  background-size: cover;
+}
+.minhaimagem3:hover{
+  background-image:url('../images/pixel3.png');
+  transition: transform 4s;
+  background-size: cover;
+}
+.minhaimagem4:hover{
+  background-image:url('../images/pixel4.png');
+  transition: transform 4s;
+  background-size: cover;
+}
+.minhaimagem5:hover{
+  background-image:url('../images/pixel5.png');
+  transition: transform 4s;
+  background-size: cover;
+}
+.minhaimagem6:hover{
+  background-image:url('../images/pixel6.png');
+  transition: transform 4s;
+  background-size: cover;
+}
+.minhaimagem7:hover{
+  background-image:url('../images/pixel7.png');
+  transition: transform 4s;
+  background-size: cover;
+}
+.minhaimagem8:hover{
+  background-image:url('../images/pixel8.png');
+  transition: transform 4s;
+  background-size: cover;
+}
+.minhaimagem9:hover{
+  background-image:url('../images/pixel9.png');
+  transition: transform 4s;
+  background-size: cover;
+}
+.minhaimagem10:hover{
+  background-image:url('../images/pixel10.png');
+  transition: transform 4s;
+  background-size: cover;
+}
+.minhaimagem11:hover{
+  background-image:url('../images/pixel11.png');
+  transition: transform 4s;
+  background-size: cover;
+}
+.minhaimagem12:hover{
+  background-image:url('../images/pixel12.png');
+  transition: transform 4s;
+  background-size: cover;
+}
+.minhaimagem13:hover{
+  background-image:url('../images/pixel13.png');
+  transition: transform 4s;
+  background-size: cover;
+}
+.minhaimagem14:hover{
+  background-image:url('../images/pixel14.png');
+  transition: transform 4s;
+  background-size: cover;
+}
+a:hover{
+  color:rgb(139,0,139);
+}
+
+/********************************/
+/*Estilo de texto e bla bla blas*/
+/********************************/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem 0; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2; }
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.3; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 0.9rem; }
+
+h6 {
+  font-size: 0.7rem; }
+
+hr {
+  border: 0;
+  border-bottom: solid 1px;
+  margin: 2rem 0; }
+hr.major {
+ margin: 4rem 0; }
+
+input, select, textarea {
+  color: #555555; }
+
+
+strong, b {
+  color: #555555; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #555555;
+}
+hr {
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+}
