@@ -264,7 +264,18 @@ a{
 a:hover{
   color: rgb(139,0,139)
 }
-
+#twitter a:hover{
+  color:#00aced;
+}
+#faceb a:hover{
+  color:#3b5998;
+}
+#insta a:hover{
+  color:#DD2A7B;
+}
+#git a:hover{
+  color:#333;
+}
 /* Estilização de Texto */
 
 p {
