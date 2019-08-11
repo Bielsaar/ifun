@@ -29,17 +29,21 @@
                 <fieldset>
                     <div class="campo">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome">
+                        <input type="text" id="nome" name="nome" required>
                     </div>
                     <div class="campo">
                         <label for="snome">Sobrenome</label>
-                        <input type="text" id="snome" name="snome">
+                        <input type="text" id="snome" name="snome" required>
+                    </div>
+                    <div class="campo">
+                    	<label for="apelido">Apelido no jogo</label>
+                    	<input type="text" id="apelido" name="apelido" required>
                     </div>
                     <div class="campo">
                         <label>Sexo</label>
                         <!--Esses Labels a seguir são para a estilização-->
                         <label>
-                            <input type="radio" name="sexo" value="masculino"> Masculino
+                            <input type="radio" name="sexo" value="masculino" marked> Masculino
                         </label>
                         <label>
                             <input type="radio" name="sexo" value="feminino"> Feminino
@@ -47,38 +51,25 @@
                     </div>
                     <div class="campo">
                         <label for="senha">Senha</label>
-                        <input type="text" id="nome" name="nome">
+                        <input type="password" id="senha" name="senha" required>
                     </div>
                     <div class="campo">
-                        <label for="snome">Digite a senha novamente</label>
-                        <input type="text" id="snome" name="snome">
+                        <label for="snome">Digite sua senha novamente</label>
+                        <input type="password" id="senha2" name="senha2" required>
                     </div>
                     <div class="campo">
                         <label for="email">E-mail</label>
-                        <input type="text" id="email" name="email">
-                    </div>
-                    <div class="campo">
-                        <label for="cidade">Cidade</label>
-                        <input type="text" id="cidade" name="cidade">
-                    </div>
-                    <div class="campo">
-                        <label for="estado">Estado</label>
-                        <select name="estado" id="estado">
-                            <option value="">--</option>
-                            <option value="PR">PB</option>
-                            <option value="AC">AC</option>
-                            <option value="outro">Outro</option>
-                        </select>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <!--Esses Labels a seguir são para a estilização-->
                     <div class="campo">
                         <label>
-                            <input type="checkbox" name="" value="1"> Gostaria de receber notificações do IFun.
+                            <input type="checkbox" name="" value="1" marked> Gostaria de receber notificações do IFun.
                         </label>
                     </div>
                     <div class="campo">
                         <label>
-                            <input type="checkbox" name="" value="1" > Eu concordo com os Termos e Condições.
+                            <input type="checkbox" name="" value="1" required> Eu concordo com os Termos e Condições.
                         </label>
                     </div>
                 </fieldset>
