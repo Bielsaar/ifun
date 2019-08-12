@@ -135,8 +135,6 @@ body {
 .Thiago1{
   transition: transform 1s;
   will-change: transform;
-  transition: filter 1s;
-  will-change: transform;
 }
 .Thiago1:hover{
   transition: transform 4s;
@@ -145,9 +143,7 @@ body {
 }
 .minhaimagemmapa{
   transition: transform 1s;
-  will-change: transform;
-  transition: filter 1s;
-  will-change: transform;
+  will-change: scale;
 }
 .minhaimagemmapa:hover{
   transition: transform 4s;
