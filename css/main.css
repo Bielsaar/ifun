@@ -280,12 +280,12 @@ a:hover{
   width: 100%;
 }
 #banner div.inner img, #banner div.inner p, #banner div.inner section{
-  animation: ifuun 3.2s;
+  animation: ifuun 2.69s;
 }
 @keyframes ifuun{
   from{
     opacity: 0;
-    transition: opacity 3.2s;
+    transition: opacity 2.69s;
   }
   to{ 
     opacity: 1;
