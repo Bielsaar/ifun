@@ -2,7 +2,7 @@
 Projeto da disciplina "Linguagens de Marcação"
 
 O projeto foi feito pelos alunos Yohanna de Oliveira Cavalcanti
-(Matricula n°20191370003) e Gabriel Xavier Silva(Matricula n°20191370025>
+(Matricula n°20191370003) e Gabriel Xavier Silva(Matricula n°20191370025) 
 
 Nele contém todos os requisitos, com divisões dos lugares no css em comentários. 
 
